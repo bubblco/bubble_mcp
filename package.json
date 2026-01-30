@@ -14,7 +14,14 @@
   "bin": {
     "bubble-mcp": "./dist/mcp-server.js"
   },
-  "keywords": ["mcp", "bubble", "bubble.io", "api", "claude", "ai"],
+  "keywords": [
+    "mcp",
+    "bubble",
+    "bubble.io",
+    "api",
+    "claude",
+    "ai"
+  ],
   "author": "Community Contributors",
   "license": "MIT",
   "repository": {
@@ -26,7 +33,7 @@
   },
   "homepage": "https://github.com/nocoderoi/bubble_mcp#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.5.0",
+    "@modelcontextprotocol/sdk": "^1.25.3",
     "axios": "^1.7.2",
     "dotenv": "^16.4.5"
   },
