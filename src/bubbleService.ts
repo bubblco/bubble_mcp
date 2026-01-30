@@ -92,43 +92,4 @@ export class BubbleService {
       throw error;
     }
   }
-
-  // Specific BCR Pro methods
-  async listOrganizations(firstEntry?: number, lastEntry?: number) {
-    return this.executeWorkflow('list_all_organizations', {
-      first_entry: firstEntry,
-      last_entry: lastEntry,
-    });
-  }
-
-  async listBranches(firstEntry?: number, lastEntry?: number) {
-    return this.executeWorkflow('list_all_branches', {
-      first_entry: firstEntry,
-      last_entry: lastEntry,
-    });
-  }
-
-  async addBranch(branchData: {
-    address: string;
-    city: string;
-    'default-template-name': string;
-    'default-template-id': string;
-    duration: number;
-    name: string;
-    organization_id: string;
-    isActive?: boolean;
-  }) {
-    return this.executeWorkflow('add_branch_api', branchData);
-  }
-
-  async signNewUser(userData: {
-    email: string;
-    first_name: string;
-    last_name: string;
-    phone: string;
-    role: string;
-    password: string;
-  }) {
-    return this.executeWorkflow('sign_new_user', userData);
-  }
 }
